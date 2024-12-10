@@ -4,7 +4,10 @@ import './App.css'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
 import Home from './Pages/Home'
-import Auth from './Pages/Auth'
+import SignIn from './Pages/SignIn'
+import About from './Pages/About'
+import Profile from './Pages/Profile'
+import SignUp from './Pages/SignUp'
 
 
 function App() {
@@ -19,7 +22,11 @@ function App() {
 <Routes>
 
     <Route path='/' element={<Home/>}/>
-    <Route path='/login' element={<Auth/>}/>
+    <Route path='/sign-in' element={<SignIn/>}/>
+    <Route path='/sign-up' element={<SignUp/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/profile' element={<Profile/>}/>
+    
 
 </Routes>
 <Footer/>
